@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+
+.header-container{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+padding: 2rem;
+}
+
+.header-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+  color: #fff;
+}
+.header-tittle{
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.header-skills{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-icons{
+  width: 2.5rem;
+  gap: 2rem;
+}
+
+.img-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.icon-list{
+  border: 2px solid #fff;
+  padding: 4px;
+  border-radius: 15px;
+  background-color: #bbe9f5;
+}
+
+.icon-list:hover{
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.self{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 2.5rem;
+}
+
+.header-end{
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.down-arrow{
+  width: 2.5rem;
+  margin-top: 8.8rem;
+}
+
+.end-arrow{
+  border: 1px solid #fdfeff;
+  padding: 1px;
+  border-radius: 35px;
+  background-color: #fdffff;
+}
+.end-arrow:hover{
+  background-color: rgb(223, 222, 222);
+  cursor: pointer;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.my-story-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.story-tittle{
+  font-size: 35px;
+  font-weight: 700;
+}
+.story-img{
+  width: 6rem;
+  border: 5px solid rgb(185, 40, 40);
+  border-radius: 50px;
+}
+.story-para{
+  font-size: 15px;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 1rem;
+}
+
+.sub-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sub-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  gap: 1rem;
+}
+
+.sub-para{
+  font-size: 15px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.featured-project-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.project-img{
+  width: 25rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.project-skill-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 2.7rem;
+  gap: 1rem;
+}
+
+.project-skill{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.project-para{
+    font-size: 15px;
+    font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+  padding: 1rem;
+}
+
+.project-button{
+  color: dodgerblue;
+  border: 2px solid rgb(50, 143, 255);
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 9rem;
+}
+
+.project-end-button :hover{
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+margin-top: 5rem;
+}
+
+.footer-detail{
+  font-size: 15px;
+  color: #fff;
+}
+
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+  .header-tittle{
+  font-size: 100px;
+  font-weight: 900;
+  margin-top: -5.5rem;
+}
+
+.header-skills{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -2rem;
+}
+
+.header-icons{
+  width: 3.5rem;
+  gap: 2rem;
+}
+
+.img-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.icon-list{
+  border: 2px solid #fff;
+  padding: 4px;
+  border-radius: 15px;
+  background-color: #bbe9f5;
+}
+
+.icon-list:hover{
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.self{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 2.5rem;
+}
+
+.header-end{
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.down-arrow{
+  width: 2.5rem;
+  margin-top: 8.8rem;
+}
+
+.end-arrow{
+  border: 1px solid #fdfeff;
+  padding: 1px;
+  border-radius: 35px;
+  background-color: #fdffff;
+}
+.end-arrow:hover{
+  background-color: rgb(223, 222, 222);
+  cursor: pointer;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.my-story-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.story-tittle{
+  font-size: 35px;
+  font-weight: 700;
+}
+.story-img{
+  width: 10rem;
+  border: 5px solid rgb(185, 40, 40);
+  border-radius: 80px;
+}
+.story-para{
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+}
+
+.sub-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sub-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sub-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  gap: 1rem;
+}
+
+.sub-para{
+  font-size: 12px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.featured-project-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Project-main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.project-img{
+  width: 17rem;
+  border-radius: 8px;
+}
+
+.project-skill-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 2.7rem;
+  gap: 1rem;
+}
+
+.project-skill{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.project-para{
+    font-size: 15px;
+    font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+  padding: 1rem;
+}
+
+.project-button{
+  color: dodgerblue;
+  border: 2px solid rgb(50, 143, 255);
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 9rem;
+}
+
+.project-end-button :hover{
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+margin-top: 5rem;
+}
+
+.footer-detail{
+  font-size: 15px;
+  color: #fff;
+}
+
+
+
+
+
+
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}
